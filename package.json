@@ -1,5 +1,5 @@
 {
-  "name": "markdown-vue-transpiler",
+  "name": "@gabio/markdown-vue-transpiler",
   "version": "0.0.1",
   "description": "A markdown to Vue transpiler",
   "main": "index.js",
@@ -11,7 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "example": "ts-node example/main.ts"
+    "example": "ts-node example/main.ts",
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
   "devDependencies": {
     "@types/marked": "^1.1.0",
     "@types/node": "^14.11.2",
-    "@vigenere23/gio": "^1.7.8",
+    "@vigenere23/gio": "^1.8.1-beta.0",
     "prettier": "^2.1.2",
     "ts-node": "^9.0.0",
     "tslint": "^6.1.3",

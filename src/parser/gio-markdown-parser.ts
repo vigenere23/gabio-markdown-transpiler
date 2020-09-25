@@ -63,21 +63,24 @@ export class GioMarkdownParser implements MarkdownParser {
     this.renderer = new GioMarkdownRenderer(relativeUrlResolver)
   }
 
-  dependencies = {
-    '@vigenere23/gio': [
-      'GioBodyText',
-      'GioTitle',
-      'GioSubtitle',
-      'GioHeading',
-      'GioCaption',
-      'GioInlineCode',
-      'GioCodeBlock',
-      'GioList',
-      'GioListItem',
-      'GioCaptionedImage',
-      'GioSmartLink'
-    ]
-  }
+  // TODO update when components exportation works
+  // dependencies = {
+  //   '@vigenere23/gio': [
+  //     'GioBodyText',
+  //     'GioTitle',
+  //     'GioSubtitle',
+  //     'GioHeading',
+  //     'GioCaption',
+  //     'GioInlineCode',
+  //     'GioCodeBlock',
+  //     'GioList',
+  //     'GioListItem',
+  //     'GioCaptionedImage',
+  //     'GioSmartLink'
+  //   ]
+  // }
+
+  dependencies = {}
 
   toVue(markdownContent: string): string {
     return marked(markdownContent, {

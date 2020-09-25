@@ -51,10 +51,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.2.tgz#2de1ed6670439387da1c9f549a2ade2b0a799256"
   integrity sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
 
-"@vigenere23/gio@^1.7.8":
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/@vigenere23/gio/-/gio-1.7.8.tgz#843650b6fd6f004f76f3e8caf57e7286cc28200e"
-  integrity sha512-o/XSefwKqvfW7BDO10GYLQWXMZ8cS1ed552EfeXHyEWDneOx3wC4Y3aMntFz2GWm/VTXawpfrECyg+1vr3fW5g==
+"@vigenere23/gio@^1.8.1-beta.0":
+  version "1.8.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@vigenere23/gio/-/gio-1.8.1-beta.0.tgz#6ff501dd87e797c4a920a3ed4c44433a673465e1"
+  integrity sha512-yA93mlKom66jPu8qYr6Wfww5aDXx5RzPVbAEqnb7zZm7HNmFAjMDDx4kBJB6ik9S5bbwJnnjkk8in1q/5CsZeg==
   dependencies:
     "@openfonts/sen_latin" "^1.0.3"
     marked "^1.1.1"

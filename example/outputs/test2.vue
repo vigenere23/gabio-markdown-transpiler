@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-  import { GioBodyText, GioTitle, GioSubtitle, GioHeading, GioCaption, GioInlineCode, GioCodeBlock, GioList, GioListItem, GioCaptionedImage, GioSmartLink } from '@vigenere23/gio';
+  
   import Vue from 'vue'
   import { Component } from 'vue-property-decorator'
 
