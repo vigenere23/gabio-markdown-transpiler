@@ -1,4 +1,4 @@
-import { VueDependencies } from '../vue-dependencies'
+import { VueDependencies } from '@/vue-dependencies'
 import { ImportsCreator } from './imports-creator'
 
 export abstract class VueFileCreator {

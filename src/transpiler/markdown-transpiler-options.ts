@@ -1,5 +1,5 @@
-import { VueFileCreator } from '../file-creator/vue-file-creator'
-import { MarkdownParser } from '../parser/markdown-parser'
+import { VueFileCreator } from '@/file-creator/vue-file-creator'
+import { MarkdownParser } from '@/parser/markdown-parser'
 
 interface MarkdownTranspilerOptionsRequired {
   inputPattern: string
