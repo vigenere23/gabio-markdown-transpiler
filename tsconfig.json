@@ -6,7 +6,7 @@
     "outDir": "./lib",
     "strict": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "rootDir": "."
   },
   "include": ["src"],
