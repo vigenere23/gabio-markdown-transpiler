@@ -1,8 +1,8 @@
-import { MarkdownCompilerOptions } from './markdown-compiler-options'
+import { MarkdownTranspilerOptions } from './markdown-transpiler-options'
 
-export class MarkdownCompiler {
+export class MarkdownTranspiler {
   // offered class
-  constructor(private options: MarkdownCompilerOptions) {}
+  constructor(private options: MarkdownTranspilerOptions) {}
 
   startCompilation(): void {
     const parsedMarkdown = this.options.parser.toVueTemplate('')

@@ -3,9 +3,7 @@ import { VueDependencies } from '../vue-dependencies'
 export class ImportsCreator {
   createImports(dependencies: VueDependencies): string {
     let imports = ''
-
     imports = this.createImportLines(imports, dependencies)
-
     return imports
   }
 
