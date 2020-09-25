@@ -2,7 +2,7 @@ import glob from 'glob'
 import fs from 'fs'
 import path from 'path'
 import { MarkdownTranspilerOptions } from './markdown-transpiler-options'
-import { ensureDirectoryExistence } from '@/utils/file'
+import { ensureDirectoryExistence } from '../utils/file'
 
 export class MarkdownTranspiler {
   constructor(private options: MarkdownTranspilerOptions) {}

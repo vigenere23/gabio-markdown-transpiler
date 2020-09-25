@@ -1,4 +1,4 @@
-import { VueDependencies } from '@/vue-dependencies'
+import { VueDependencies } from '../vue-dependencies'
 
 export class ImportsCreator {
   createImports(dependencies: VueDependencies): string {
