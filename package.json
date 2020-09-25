@@ -1,6 +1,6 @@
 {
   "name": "@gabio/markdown-vue-transpiler",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A markdown to Vue transpiler",
   "publishConfig": {
     "access": "public"
