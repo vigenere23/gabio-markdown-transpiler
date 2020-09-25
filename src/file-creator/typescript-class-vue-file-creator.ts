@@ -1,18 +1,25 @@
-import { VueDependencies } from '../vue-dependencies'
-import { ImportsCreator } from './imports-creator'
 import { VueFileCreator } from './vue-file-creator'
 
-export class TypescriptClassVueFileCreator implements VueFileCreator {
-  private importsCreator: ImportsCreator
+export class TypescriptClassVueFileCreator extends VueFileCreator {
+  protected wrapVueContent(parsedMarkdown: string, imports: string, fileName: string): string {
+    return `<template>
+  <div>
+    ${parsedMarkdown}
+  </div>
+</template>
 
-  constructor() {
-    this.importsCreator = new ImportsCreator()
+<script lang="ts">
+  ${imports}
+  ${this.additionalImports}
+
+  @Component
+  export default class ${this.getComponentName(fileName)} extends Vue {}
+</script>
+`
   }
 
-  create(parsedMarkdown: string, dependencies: VueDependencies): string {
-    const imports = this.importsCreator.createImports(dependencies)
-    console.log(imports)
-    return '' // TODO
-    // create Vue file with dependencies and template
+  protected get additionalImports(): string {
+    return `import Vue from 'vue'
+  import { Component } from 'vue-property-decorator'`
   }
 }

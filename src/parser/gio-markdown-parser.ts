@@ -3,35 +3,36 @@ import { MarkdownParser } from './markdown-parser'
 import marked, { Renderer } from 'marked'
 
 class GioMarkdownRenderer extends Renderer {
-  constructor(private relativeUrlResolver: RelativeUrlResolver) {
+  constructor(private relativeUrlResolver?: RelativeUrlResolver) {
     super()
   }
 
   heading(text: string, level: number): string {
     const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-')
     return level === 1
-      ? `<GioTitle no-margin fontSize="12rem">${text}</GioTitle>`
+      ? `<GioTitle no-margin fontSize="12rem">${text}</GioTitle>\n`
       : level === 6
-      ? `<GioSubtitle>${text}</GioSubtitle>`
-      : `<GioHeading :level="${level - 1}" id="#${escapedText}">${text}</GioHeading>`
+      ? `<GioSubtitle>${text}</GioSubtitle>\n`
+      : `<GioHeading :level="${level - 1}" id="#${escapedText}">${text}</GioHeading>\n`
   }
 
   paragraph(text: string): string {
-    return `<GioBodyText>${text}</GioBodyText>`
+    return `<GioBodyText>${text}</GioBodyText>\n`
   }
 
   image(href: string, title: string, text: string): string {
+    const resolvedHref = resolveURL(href, this.relativeUrlResolver)
+
     return `
       <GioCaptionedImage
-        :srcs="['${resolveURL(href, this.relativeUrlResolver)}']"
+        :srcs="['${resolvedHref}']"
         caption="${text || title || ''}"
         lazy
-      />
-    `
+      />\n`
   }
 
   blockquote(quote: string): string {
-    return `<GioCaption>${quote}</GioCaption>`
+    return `<GioCaption>${quote}</GioCaption>\n`
   }
 
   codespan(code: string): string {
@@ -39,15 +40,15 @@ class GioMarkdownRenderer extends Renderer {
   }
 
   code(code: string, language?: string): string {
-    return `<GioCodeBlock language="${language}" code="${encodeURI(code)}" />`
+    return `<GioCodeBlock language="${language}" code="${encodeURI(code)}" />\n`
   }
 
   list(body: string /*ordered: boolean, start: number*/): string {
-    return `<GioBodyText no-margin><GioList indent>${body}</GioList></GioBodyText>`
+    return `<GioBodyText no-margin><GioList indent>${body}</GioList></GioBodyText>\n`
   }
 
   listitem(text: string): string {
-    return `<GioListItem>${text}</GioListItem>`
+    return `<GioListItem>${text}</GioListItem>\n`
   }
 
   link(href: string, _title: string, text: string) {
@@ -58,7 +59,7 @@ class GioMarkdownRenderer extends Renderer {
 export class GioMarkdownParser implements MarkdownParser {
   private renderer: Renderer
 
-  constructor(relativeUrlResolver: RelativeUrlResolver) {
+  constructor(relativeUrlResolver?: RelativeUrlResolver) {
     this.renderer = new GioMarkdownRenderer(relativeUrlResolver)
   }
 
@@ -78,7 +79,7 @@ export class GioMarkdownParser implements MarkdownParser {
     ]
   }
 
-  toVueTemplate(markdownContent: string): string {
+  toVue(markdownContent: string): string {
     return marked(markdownContent, {
       renderer: this.renderer
     })
