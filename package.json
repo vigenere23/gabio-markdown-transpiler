@@ -6,6 +6,10 @@
     "access": "public"
   },
   "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./": "./lib/"
+  },
   "files": [
     "lib/**/*"
   ],
