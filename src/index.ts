@@ -1,4 +1,5 @@
 export { FileCreator } from './file-creator/file-creator'
+export { SvelteFileCreator } from './file-creator/svelte-file-creator'
 export { VueTypescriptClassFileCreator } from './file-creator/vue-typescript-class-file-creator'
 export { MarkdownParser } from './parser/markdown-parser'
 export { HTMLMarkdownParser } from './parser/html-markdown-parser'

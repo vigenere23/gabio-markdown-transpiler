@@ -18,7 +18,7 @@ export class VueTypescriptClassFileCreator extends FileCreator {
 `
   }
 
-  protected get additionalImports(): string {
+  private get additionalImports(): string {
     return `import Vue from 'vue'
   import { Component } from 'vue-property-decorator'`
   }

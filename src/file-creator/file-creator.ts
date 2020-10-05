@@ -15,7 +15,6 @@ export abstract class FileCreator {
   }
 
   protected abstract wrapParsedContent(parsedMarkdown: string, imports: string, fileName: string): string
-  protected abstract get additionalImports(): string
   public abstract get fileExtension(): string
 
   protected getComponentName(filename: string): string {
