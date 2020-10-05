@@ -1,7 +1,7 @@
-import { VueDependencies } from '../vue-dependencies'
+import { Dependencies } from '../dependencies'
 
 export class ImportsCreator {
-  createImports(dependencies: VueDependencies): string {
+  createImports(dependencies: Dependencies): string {
     let imports = ''
 
     for (const [depPackage, depModules] of Object.entries(dependencies)) {

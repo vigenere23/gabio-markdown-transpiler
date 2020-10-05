@@ -1,21 +1,22 @@
-import { VueDependencies } from '../vue-dependencies'
+import { Dependencies } from '../dependencies'
 import { ImportsCreator } from './imports-creator'
 
-export abstract class VueFileCreator {
+export abstract class FileCreator {
   private importsCreator: ImportsCreator
 
   constructor() {
     this.importsCreator = new ImportsCreator()
   }
 
-  create(parsedMarkdown: string, dependencies: VueDependencies, filename: string): string {
+  create(parsedMarkdown: string, dependencies: Dependencies, filename: string): string {
     const dependenciesImports = this.importsCreator.createImports(dependencies)
-    const fileContent = this.wrapVueContent(parsedMarkdown, dependenciesImports, filename)
+    const fileContent = this.wrapParsedContent(parsedMarkdown, dependenciesImports, filename)
     return fileContent
   }
 
-  protected abstract wrapVueContent(parsedMarkdown: string, imports: string, fileName: string): string
+  protected abstract wrapParsedContent(parsedMarkdown: string, imports: string, fileName: string): string
   protected abstract get additionalImports(): string
+  public abstract get fileExtension(): string
 
   protected getComponentName(filename: string): string {
     return (

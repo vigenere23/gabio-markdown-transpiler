@@ -1,7 +1,7 @@
-import { VueFileCreator } from './vue-file-creator'
+import { FileCreator } from './file-creator'
 
-export class TypescriptClassVueFileCreator extends VueFileCreator {
-  protected wrapVueContent(parsedMarkdown: string, imports: string, fileName: string): string {
+export class VueTypescriptClassFileCreator extends FileCreator {
+  protected wrapParsedContent(parsedMarkdown: string, imports: string, fileName: string): string {
     return `<template>
   <div>
     ${parsedMarkdown}
@@ -21,5 +21,9 @@ export class TypescriptClassVueFileCreator extends VueFileCreator {
   protected get additionalImports(): string {
     return `import Vue from 'vue'
   import { Component } from 'vue-property-decorator'`
+  }
+
+  get fileExtension(): string {
+    return '.vue'
   }
 }

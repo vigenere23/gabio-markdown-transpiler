@@ -1,6 +1,6 @@
-import { VueDependencies } from '../vue-dependencies'
+import { Dependencies } from '../dependencies'
 
 export interface MarkdownParser {
-  toVue(markdownContent: string): string
-  dependencies: VueDependencies
+  parse(markdownContent: string): string
+  dependencies: Dependencies
 }

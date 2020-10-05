@@ -19,13 +19,13 @@ export class MarkdownTranspiler {
           fs.readFile(inputPath, (error, markdownContent) => {
             if (error) return reject(error)
 
-            const parsedMarkdown = this.options.parser.toVue(markdownContent.toString())
+            const parsedMarkdown = this.options.parser.parse(markdownContent.toString())
             const filename = this.getFileName(inputPath)
-            const vueFile = this.options.fileCreator.create(parsedMarkdown, this.options.parser.dependencies, filename)
+            const file = this.options.fileCreator.create(parsedMarkdown, this.options.parser.dependencies, filename)
 
-            const outputPath = path.join(this.options.outputDir, filename + '.vue')
+            const outputPath = path.join(this.options.outputDir, filename + this.options.fileCreator.fileExtension)
 
-            fs.writeFile(outputPath, vueFile, (error) => {
+            fs.writeFile(outputPath, file, (error) => {
               if (error) return reject(error)
 
               return resolve()

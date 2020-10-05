@@ -1,5 +1,5 @@
-export { VueFileCreator } from './file-creator/vue-file-creator'
-export { TypescriptClassVueFileCreator } from './file-creator/typescript-class-vue-file-creator'
+export { FileCreator } from './file-creator/file-creator'
+export { VueTypescriptClassFileCreator } from './file-creator/vue-typescript-class-file-creator'
 export { MarkdownParser } from './parser/markdown-parser'
 export { HTMLMarkdownParser } from './parser/html-markdown-parser'
 export { MarkdownTranspiler } from './transpiler/markdown-transpiler'

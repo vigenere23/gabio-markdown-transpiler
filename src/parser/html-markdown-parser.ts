@@ -4,7 +4,7 @@ import { parse } from 'marked'
 export class HTMLMarkdownParser implements MarkdownParser {
   dependencies = {}
 
-  toVue(markdownContent: string): string {
+  parse(markdownContent: string): string {
     return parse(markdownContent)
   }
 }
