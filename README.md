@@ -18,3 +18,10 @@ yarn add @gabio/markdown-transpiler
 ## Usage
 
 A usage example can be found [here](./example).
+
+## Supported output file types
+
+- Vuejs
+  - 2.x - typescript class
+- Svelte
+  - 3.x - typescript (easily changeable to non-typescript by removing the `lang="ts"` attribute)
