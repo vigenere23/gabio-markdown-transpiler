@@ -1,4 +1,6 @@
-# markdown-transpiler
+[![npm version](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler.svg)](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler)
+
+# ⚙️ @gabio/markdown-transpiler
 
 A generic and extensible markdown transpiler
 
