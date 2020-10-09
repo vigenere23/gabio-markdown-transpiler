@@ -1,3 +1,4 @@
+![Build](https://github.com/vigenere23/gabio-markdown-transpiler/workflows/Build/badge.svg)
 [![npm version](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler.svg)](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler)
 
 # ⚙️ [@gabio/markdown-transpiler](https://www.npmjs.com/package/@gabio/markdown-transpiler)
@@ -22,6 +23,6 @@ yarn add @gabio/markdown-transpiler
 
 ## Usage
 
-A usage example can be found [here](./example).
+A usage example can be found [here](https://github.com/vigenere23/gabio-markdown-transpiler/tree/master/example).
 
 ## [Documentation](https://vigenere23.github.io/gabio-markdown-transpiler)
