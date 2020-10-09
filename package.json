@@ -1,6 +1,6 @@
 {
   "name": "@gabio/markdown-transpiler",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "A generic and extensible markdown transpiler",
   "publishConfig": {
     "access": "public"
