@@ -1,9 +1,9 @@
 ![Build](https://github.com/vigenere23/gabio-markdown-transpiler/workflows/Build/badge.svg)
 [![npm version](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler.svg)](https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler)
 
-# ⚙️ [@gabio/markdown-transpiler](https://www.npmjs.com/package/@gabio/markdown-transpiler)
+# [@gabio/markdown-transpiler](https://www.npmjs.com/package/@gabio/markdown-transpiler)
 
-A **extensible** and **easy-to-use** markdown transpiler!
+⚙️ An **extensible** and **easy-to-use** markdown transpiler!
 
 ## Why?
 
