@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@gabio/markdown-transpiler": ["../src"]
+      "@gabio/markdown-transpiler": [".."]
     }
   },
   "include": ["./**/*.ts"]

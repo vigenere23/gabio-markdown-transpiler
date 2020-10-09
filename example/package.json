@@ -1,0 +1,13 @@
+{
+  "name": "@gabio/markdown-transpiler-example",
+  "version": "1.0.0",
+  "description": "An example script for using @gabio/markdown-transpiler",
+  "scripts": {
+    "build": "ts-node -r tsconfig-paths/register main.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "dependencies": {}
+}

@@ -6,10 +6,13 @@ A generic and extensible markdown transpiler
 
 ## Description
 
-This tool is meant to be used in a script and NOT during runtime. It will read markdown files and transform them into the appropriate file type. The transpilator will use 2 main objects in order to achieve this :
+This tool will read markdown files and transform them into the appropriate file type. In order to achieve such a task, three interfaces each play a different role in the process:
 
-1. A markdown parser, used to transform markdown tokens into components
-2. A file creator, used to wrap the parsed content and define the `<script>` section
+1. A _`MarkdownParser`_, used to transform markdown files into HTML or components
+2. An _`ImportsCreator`_, used to generate the appropriate import section inside the `<script>` tag
+3. A _`FileCreator`_, used to wrap the parsed content and define the `<script>` section
+
+The `MarkdownTranspiler` will take an implementation from each of these interfaces and output the resulting file.
 
 ## Installation
 
@@ -21,9 +24,4 @@ yarn add @gabio/markdown-transpiler
 
 A usage example can be found [here](./example).
 
-## Supported output file types
-
-- Vuejs
-  - 2.x - typescript class
-- Svelte
-  - 3.x - typescript (easily changeable to non-typescript by removing the `lang="ts"` attribute)
+## [Documentation](https://vigenere23.github.io/gabio-markdown-transpiler)
