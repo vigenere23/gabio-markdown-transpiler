@@ -10,9 +10,9 @@
 What most transpilers do :
 
 - Transpile at runtime, which takes time and delays your page loading 🙄
-- Only transforms to basic HTML that you need to style with global HTML tag selectors 🤮
-- Offers no way to extend their code for adding new transpiling strategies or supporting new file types 😑
-- Does not permit the usage of components 😳
+- Only transform to basic HTML that you need to style with global HTML tag selectors 🤮
+- Offer no way to extend their code for adding new transpiling strategies or supporting new file types 😑
+- Do not permit the usage of components 😳
 
 ## Description
 
@@ -27,7 +27,13 @@ The `MarkdownTranspiler` will take an implementation from each of these interfac
 ## Installation
 
 ```
-yarn add @gabio/markdown-transpiler
+yarn add --dev @gabio/markdown-transpiler
+```
+
+or
+
+```
+npm install --save-dev @gabio/markdown-transpiler
 ```
 
 ## Usage
