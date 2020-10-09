@@ -46,7 +46,7 @@ As stated above, you can provide your own version of any parts of the transpiler
 
 For other interfaces, you can look at the source code for a good idea on how they can be implemented.
 
-## [Documentation](https://vigenere23.github.io/gabio-markdown-transpiler)
+## [Documentation](https://vigenere23.github.io/gabio-markdown-transpiler/globals.html)
 
 ## Future work
 
