@@ -6,7 +6,7 @@
 <blockquote>
 <p><em>They should be all damned</em></p>
 </blockquote>
-<p><img src="image.png" alt="test image"></p>
+<p><img src="https://picsum.photos/seed/picsum/536/354" alt="test image"></p>
 
   </div>
 </template>
