@@ -28,7 +28,7 @@ export class ImportsCreatorES6Module implements ImportsCreator {
 
     for (const [depPackage, depModules] of Object.entries(dependencies)) {
       const modules = Array.isArray(depModules) ? `{ ${depModules.join(', ')} }` : depModules
-      imports += `import ${modules} from '${depPackage}';`
+      imports += `import ${modules} from '${depPackage}'\n`
     }
 
     return imports
