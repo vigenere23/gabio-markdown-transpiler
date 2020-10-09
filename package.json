@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vigenere23/markdown-transpiler.git"
+    "url": "git+https://github.com/vigenere23/gabio-markdown-transpiler.git"
   },
   "keywords": [
     "vue",
@@ -32,9 +32,9 @@
   "author": "Gabriel St-Pierre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vigenere23/markdown-transpiler/issues"
+    "url": "https://github.com/vigenere23/gabio-markdown-transpiler/issues"
   },
-  "homepage": "https://github.com/vigenere23/markdown-transpiler#readme",
+  "homepage": "https://github.com/vigenere23/gabio-markdown-transpiler#readme",
   "devDependencies": {
     "@types/glob": "^7.1.3",
     "@types/marked": "^1.1.0",
