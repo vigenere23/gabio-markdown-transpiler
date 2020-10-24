@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "An example script for using @gabio/markdown-transpiler",
   "scripts": {
-    "build": "ts-node -r tsconfig-paths/register main.ts"
+    "build": "npm run build:markdown && npm run format",
+    "build:markdown": "ts-node -r tsconfig-paths/register main.ts",
+    "format": "prettier -w ."
   },
   "devDependencies": {
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.4.1",
+    "svelte": "^3.29.4",
     "ts-node": "^9.0.0",
-    "tsconfig-paths": "^3.9.0"
+    "tsconfig-paths": "^3.9.0",
+    "tslint-config-prettier": "^1.18.0"
   },
   "dependencies": {}
 }

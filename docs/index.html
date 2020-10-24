@@ -66,19 +66,19 @@
 			<div class="tsd-panel tsd-typography">
 				<p><img src="https://github.com/vigenere23/gabio-markdown-transpiler/workflows/Build/badge.svg" alt="Build">
 				<a href="https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler"><img src="https://badge.fury.io/js/%40gabio%2Fmarkdown-transpiler.svg" alt="npm version"></a></p>
-				<a href="#⚙️-gabiomarkdown-transpiler" id="⚙️-gabiomarkdown-transpiler" style="color: inherit; text-decoration: none;">
-					<h1>⚙️ <a href="https://www.npmjs.com/package/@gabio/markdown-transpiler">@gabio/markdown-transpiler</a></h1>
+				<a href="#gabiomarkdown-transpiler" id="gabiomarkdown-transpiler" style="color: inherit; text-decoration: none;">
+					<h1><a href="https://www.npmjs.com/package/@gabio/markdown-transpiler">@gabio/markdown-transpiler</a></h1>
 				</a>
-				<p>A <strong>extensible</strong> and <strong>easy-to-use</strong> markdown transpiler!</p>
+				<p>⚙️ An <strong>extensible</strong> and <strong>easy-to-use</strong> markdown transpiler!</p>
 				<a href="#why" id="why" style="color: inherit; text-decoration: none;">
 					<h2>Why?</h2>
 				</a>
 				<p>What most transpilers do :</p>
 				<ul>
 					<li>Transpile at runtime, which takes time and delays your page loading 🙄</li>
-					<li>Only transforms to basic HTML that you need to style with global HTML tag selectors 🤮</li>
-					<li>Offers no way to extend their code for adding new transpiling strategies or supporting new file types 😑</li>
-					<li>Does not permit the usage of components 😳</li>
+					<li>Only transform to basic HTML that you need to style with global HTML tag selectors 🤮</li>
+					<li>Offer no way to extend their code for adding new transpiling strategies or supporting new file types 😑</li>
+					<li>Do not permit the usage of components 😳</li>
 				</ul>
 				<a href="#description" id="description" style="color: inherit; text-decoration: none;">
 					<h2>Description</h2>
@@ -93,7 +93,9 @@
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
-				<pre><code>yarn <span class="hljs-keyword">add</span><span class="bash"> @gabio/markdown-transpiler</span></code></pre>
+				<pre><code>yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @gabio/markdown-transpiler</span></code></pre>
+				<p>or</p>
+				<pre><code><span class="hljs-built_in">npm</span> install --save-dev @gabio/markdown-transpiler</code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
@@ -104,7 +106,7 @@
 				<p>As stated above, you can provide your own version of any parts of the transpiler. However, the most common interface to be implemented is the <code>MarkdownParser</code>. <a href="https://github.com/vigenere23/gabio-design-svelte/blob/main/src/lib/markdown.ts">Here</a> is an example for transpiling to a Svelte component library.</p>
 				<p>For other interfaces, you can look at the source code for a good idea on how they can be implemented.</p>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-					<h2><a href="https://vigenere23.github.io/gabio-markdown-transpiler">Documentation</a></h2>
+					<h2><a href="https://vigenere23.github.io/gabio-markdown-transpiler/globals.html">Documentation</a></h2>
 				</a>
 				<a href="#future-work" id="future-work" style="color: inherit; text-decoration: none;">
 					<h2>Future work</h2>
@@ -157,6 +159,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#dependencies" class="tsd-kind-icon">Dependencies</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#markdownparseroutput" class="tsd-kind-icon">Markdown<wbr>Parser<wbr>Output</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#ensuredirectoryexistence" class="tsd-kind-icon">ensure<wbr>Directory<wbr>Existence</a>

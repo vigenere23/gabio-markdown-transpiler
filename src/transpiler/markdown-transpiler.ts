@@ -70,8 +70,8 @@ export class MarkdownTranspiler {
       identifier = randomString(16)
     }
 
-    const parsedMarkdown = this.parser.parse(markdownContent)
-    const file = this.fileCreator.create(parsedMarkdown, this.parser.getDependencies(), identifier)
+    const { parsedContent, dependencies } = this.parser.parse(markdownContent)
+    const file = this.fileCreator.create(parsedContent, dependencies, identifier)
 
     return file
   }

@@ -1,4 +1,4 @@
-import type { Dependencies } from '../utils/dependencies'
+import type { MarkdownParserOutput } from './markdown-parser-output'
 
 /**
  * Interface for parsing markdown content.
@@ -10,10 +10,5 @@ export interface MarkdownParser {
    * Transforms markdown content to any implementation wanted (ex: Vue components)
    * @param markdownContent The markdown content string
    */
-  parse(markdownContent: string): string
-
-  /**
-   * Gets the dependencies needed to use the components from the parsed content
-   */
-  getDependencies(): Dependencies
+  parse(markdownContent: string): MarkdownParserOutput
 }
