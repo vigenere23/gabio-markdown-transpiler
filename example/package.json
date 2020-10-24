@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An example script for using @gabio/markdown-transpiler",
   "scripts": {
-    "build": "npm run build:markdown && npm run format",
+    "build": "yarn build:markdown && yarn format",
     "build:markdown": "ts-node -r tsconfig-paths/register main.ts",
     "format": "prettier -w ."
   },

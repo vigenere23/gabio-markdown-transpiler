@@ -18,7 +18,7 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
 
       - name: Installing dependencies
-        run: yarn
+        run: yarn setup
 
       - name: Building
         run: yarn build

@@ -14,14 +14,15 @@
     "lib/**/*"
   ],
   "scripts": {
-    "build": "npm run build:ts && npm run build:doc && npm run build:example",
+    "setup": "yarn && cd example && yarn",
+    "build": "yarn build:ts && yarn build:doc && yarn build:example",
     "build:ts": "tsc -p src",
     "build:doc": "typedoc --out docs --mode file src",
-    "build:example": "cd example && npm run build && cd -",
+    "build:example": "cd example && yarn build && cd -",
     "test": "jest",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "yarn test && yarn build"
   },
   "repository": {
     "type": "git",
