@@ -13,13 +13,14 @@ describe(MarkdownParserHTML.name, () => {
 
   describe('getDependencies()', () => {
     test('should be empty', () => {
-      expect(parser.getDependencies()).toEqual({})
+      const dependencies = parser.parse(markdownTestFile).dependencies
+      expect(dependencies).toEqual({})
     })
   })
 
   describe('parse()', () => {
     test('it returns the right content', () => {
-      const parsedMarkdown = parser.parse(markdownTestFile)
+      const parsedMarkdown = parser.parse(markdownTestFile).parsedContent
       const expectedContent = `<h1 id="a-bright-sun">A bright sun</h1>
 <h2 id="the-day-i-was-born">The day I was born</h2>
 <p>It was in the year <strong>503</strong>, once...</p>
