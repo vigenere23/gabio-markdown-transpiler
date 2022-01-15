@@ -58,6 +58,6 @@
   },
   "dependencies": {
     "glob": "^7.1.6",
-    "marked": "^2.0.0"
+    "marked": "^4.0.10"
   }
 }
